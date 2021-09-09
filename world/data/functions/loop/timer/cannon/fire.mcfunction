@@ -12,6 +12,7 @@ execute @e[tag=tower,score_fire_chance=-1] ~ ~ ~ particle angryVillager ~ ~1 ~ 0
 execute @e[score_fire_target_min=1] ~ ~ ~ summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:3}
 execute @e[score_fire_target_min=1] ~ ~1 ~ summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:3}
 execute @e[score_fire_target_min=1] ~ ~2 ~ summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:3}
+execute @e[score_fire_target_min=1] ~ ~ ~ kill @e[r=1]
 scoreboard players set @e[tag=tower] fire_chance 0
 scoreboard players set @e[tag=s] fire_target 0
 scoreboard players set @e[tag=building] fire_target 0

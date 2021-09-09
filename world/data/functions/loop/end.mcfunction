@@ -6,6 +6,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] stage 1
 scoreboard players set @e[tag=cmd] branch 3
+entitydata @e[tag=s] {NoAI:1b}
 title @p times 0 40 10
 title @a title {"translate":"aop.gameover","bold":true,"color":"dark_gray"}
 execute @e[tag=commandcenter,team=team1,c=1] ~ ~ ~ execute @e[tag=cmd,score_rteam_min=1,score_rteam=1] ~ ~ ~ title @p[team=red] title {"translate":"aop.victory","bold":true,"color":"gold"}

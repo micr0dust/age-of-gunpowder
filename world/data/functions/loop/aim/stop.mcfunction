@@ -30,4 +30,3 @@ scoreboard players set @e[tag=long_range,c=1,r=0] aim 1
 
 
 
-

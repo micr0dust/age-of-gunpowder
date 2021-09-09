@@ -43,4 +43,3 @@ execute @e[name=wall,tag=blue,c=1,r=4] ~ ~ ~ scoreboard players set @p[team=blue
 
 
 
-

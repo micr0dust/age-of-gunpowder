@@ -14,6 +14,11 @@ scoreboard objectives add k dummy
 scoreboard objectives add l dummy
 #boolean
 scoreboard objectives add b dummy
+#各隊伍AI用標記
+scoreboard objectives add AI_r dummy
+scoreboard objectives add AI_b dummy
+scoreboard objectives add AI_y dummy
+scoreboard objectives add AI_g dummy
 #token (防無視領土相連使用建築)
 scoreboard objectives add token dummy
 #兵種
@@ -124,6 +129,10 @@ scoreboard objectives add bmanpower_ef dummy
 scoreboard objectives add bgold_ef dummy
 scoreboard objectives add bwood_ef dummy
 scoreboard objectives add balive dummy
+scoreboard objectives add bAI dummy
+scoreboard players set @e[tag=cmd] bAI 0
+scoreboard objectives add Bpopulation dummy
+scoreboard players set @e[tag=cmd] Bpopulation 0
 #紅---------------------------------------------------
 scoreboard teams add red red
 scoreboard teams option red color dark_red
@@ -137,6 +146,10 @@ scoreboard objectives add rmanpower_ef dummy
 scoreboard objectives add rgold_ef dummy
 scoreboard objectives add rwood_ef dummy
 scoreboard objectives add ralive dummy
+scoreboard objectives add rAI dummy
+scoreboard players set @e[tag=cmd] rAI 0
+scoreboard objectives add Rpopulation dummy
+scoreboard players set @e[tag=cmd] Rpopulation 0
 #黃---------------------------------------------------
 scoreboard teams add yellow yellow
 scoreboard teams option yellow color yellow
@@ -150,9 +163,13 @@ scoreboard objectives add ymanpower_ef dummy
 scoreboard objectives add ygold_ef dummy
 scoreboard objectives add ywood_ef dummy
 scoreboard objectives add yalive dummy
+scoreboard objectives add yAI dummy
+scoreboard players set @e[tag=cmd] yAI 0
+scoreboard objectives add Ypopulation dummy
+scoreboard players set @e[tag=cmd] Ypopulation 0
 #綠---------------------------------------------------
 scoreboard teams add green green
-scoreboard teams option green color dark_green
+scoreboard teams option green color green
 scoreboard objectives add gteam dummy
 scoreboard players set @e[tag=cmd] gteam 0
 scoreboard objectives add gmanpower dummy
@@ -163,6 +180,10 @@ scoreboard objectives add gmanpower_ef dummy
 scoreboard objectives add ggold_ef dummy
 scoreboard objectives add gwood_ef dummy
 scoreboard objectives add galive dummy
+scoreboard objectives add gAI dummy
+scoreboard players set @e[tag=cmd] gAI 0
+scoreboard objectives add Gpopulation dummy
+scoreboard players set @e[tag=cmd] Gpopulation 0
 #-----------------------------------------------------
 function console:trigger
 

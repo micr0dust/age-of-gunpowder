@@ -7,6 +7,17 @@
 #時間
 function loop:timer
 
+#單位分隊
+function stage:game/team
+
+#AI
+execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ function loop:ai/red if @e[tag=cmd,score_rAI_min=1,score_rAI=1]
+execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ function loop:ai/blue if @e[tag=cmd,score_bAI_min=1,score_bAI=1]
+execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ function loop:ai/yellow if @e[tag=cmd,score_yAI_min=1,score_yAI=1]
+execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ function loop:ai/green if @e[tag=cmd,score_gAI_min=1,score_gAI=1]
+
+
+
 #玩家選項依狀態分配
 execute @a[score_status_min=1,team=!spectator] ~ ~ ~ function stage:game/building if @e[tag=ctrl,r=4,score_buildType_min=1]
 execute @a[score_status_min=1,team=!spectator] ~ ~ ~ function stage:game/territory if @e[tag=ctrl,r=4,score_buildType=0]
@@ -28,9 +39,6 @@ function loop:unit_select
 
 #資源顯示
 function loop:actionbar
-
-#單位分隊
-function stage:game/team
 
 #遠程單位遇敵停止
 function loop:aim
@@ -78,6 +86,8 @@ execute @e[tag=swordman,score_onground_min=1] ~ ~ ~ entitydata @e[tag=green,r=0,
 scoreboard players set @e[tag=rider] onground 0 {OnGround:1b}
 scoreboard players tag @e[tag=rider] remove rider {OnGround:1b}
 scoreboard players tag @e[tag=pistol] remove pistol {OnGround:1b}
+
+
 
 #結束偵測
 function loop:endgame

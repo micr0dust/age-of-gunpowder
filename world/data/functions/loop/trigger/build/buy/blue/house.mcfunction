@@ -13,5 +13,5 @@ execute @e[tag=cmd,score_bwood_min=100] ~ ~ ~ execute @p[score_building_min=8,sc
 scoreboard players remove @e[tag=cmd,score_bwood_min=100] bwood 100
 scoreboard players set @a building -1
 scoreboard players enable @a building
-
+function loop:population/blue
 
