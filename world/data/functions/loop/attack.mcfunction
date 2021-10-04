@@ -98,7 +98,10 @@ execute @e[tag=rattack] ~ ~ ~ function @@@:suicide unless @e[tag=rattacker]
 execute @e[tag=battack] ~ ~ ~ function @@@:suicide unless @e[tag=battacker]
 execute @e[tag=yattack] ~ ~ ~ function @@@:suicide unless @e[tag=yattacker]
 execute @e[tag=gattack] ~ ~ ~ function @@@:suicide unless @e[tag=gattacker]
-
+execute @e[tag=rattacker] ~ ~ ~ function @@@:suicide unless @e[tag=rattack]
+execute @e[tag=battacker] ~ ~ ~ function @@@:suicide unless @e[tag=battack]
+execute @e[tag=yattacker] ~ ~ ~ function @@@:suicide unless @e[tag=yattack]
+execute @e[tag=gattacker] ~ ~ ~ function @@@:suicide unless @e[tag=gattack]
 
 
 

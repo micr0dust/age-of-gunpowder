@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 scoreboard players remove @e[tag=cmd] terrain 1
-execute @e[tag=cmd,score_terrain=-1] ~ ~ ~ scoreboard players set @e[tag=cmd] terrain 2
+execute @e[tag=cmd,score_terrain=-1] ~ ~ ~ scoreboard players set @e[tag=cmd] terrain 9
 function stage:menu/custom%20game/terrain
 
 

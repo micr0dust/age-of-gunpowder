@@ -6,6 +6,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] yflintlock 1
 scoreboard players remove @e[tag=cmd] ygold 500
-
+scoreboard players set @e[tag=cmd] yswordman 0
+scoreboard players set @e[tag=cmd] yspearman 0
 
 

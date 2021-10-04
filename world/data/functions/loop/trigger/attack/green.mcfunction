@@ -6,7 +6,7 @@
 #########################################################################################################
 execute @e[tag=gend,c=1] ~ ~ ~ kill @e[tag=gtarget]
 execute @e[tag=goutset,c=1] ~ ~ ~ kill @e[tag=gattacker]
-execute @e[tag=goutset,c=1] ~ ~ ~ kill @e[tag=attack]
+execute @e[tag=goutset,c=1] ~ ~ ~ kill @e[tag=gattack]
 execute @e[tag=gend,c=1] ~ ~ ~ summon minecraft:villager ~ 48 ~ {PersistenceRequired:1b,UUIDMost:-4999L,UUIDLeast:-4999L,NoAI:1b,Invulnerable:1,Silent:1,Tags:["target","gtarget","green"]}
 execute @e[tag=cmd,score_gswordman_min=1,score_gspearman=0] ~ ~ ~ execute @e[tag=goutset,c=1] ~ ~ ~ summon minecraft:husk ~ 48 ~ {PersistenceRequired:1b,UUIDMost:4899L,UUIDLeast:4899L,Attributes:[{Name:"generic.followRange",Base:152},{Name:"generic.knockbackResistance",Base:1f},{Name:"generic.movementSpeed",Base:0.13f}],Silent:1,Tags:["attacker","gattacker","green"]}
 execute @e[tag=cmd,score_gswordman=0,score_gspearman_min=1] ~ ~ ~ execute @e[tag=goutset,c=1] ~ ~ ~ summon minecraft:husk ~ 48 ~ {PersistenceRequired:1b,UUIDMost:4899L,UUIDLeast:4899L,Attributes:[{Name:"generic.followRange",Base:152},{Name:"generic.knockbackResistance",Base:1f},{Name:"generic.movementSpeed",Base:0.13f}],Silent:1,Tags:["attacker","gattacker","green"]}

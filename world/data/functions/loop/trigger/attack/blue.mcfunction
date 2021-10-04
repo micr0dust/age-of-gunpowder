@@ -6,7 +6,7 @@
 #########################################################################################################
 execute @e[tag=bend,c=1] ~ ~ ~ kill @e[tag=btarget]
 execute @e[tag=boutset,c=1] ~ ~ ~ kill @e[tag=battacker]
-execute @e[tag=boutset,c=1] ~ ~ ~ kill @e[tag=attack]
+execute @e[tag=boutset,c=1] ~ ~ ~ kill @e[tag=battack]
 execute @e[tag=bend,c=1] ~ ~ ~ summon minecraft:villager ~ 48 ~ {PersistenceRequired:1b,UUIDMost:-2999L,UUIDLeast:-2999L,NoAI:1b,Invulnerable:1,Silent:1,Tags:["target","btarget","blue"]}
 execute @e[tag=cmd,score_bswordman_min=1,score_bspearman=0] ~ ~ ~ execute @e[tag=boutset,c=1] ~ ~ ~ summon minecraft:husk ~ 48 ~ {PersistenceRequired:1b,UUIDMost:2899L,UUIDLeast:2899L,Attributes:[{Name:"generic.followRange",Base:152},{Name:"generic.knockbackResistance",Base:1f},{Name:"generic.movementSpeed",Base:0.13f}],Silent:1,Tags:["attacker","battacker","blue"]}
 execute @e[tag=cmd,score_bswordman=0,score_bspearman_min=1] ~ ~ ~ execute @e[tag=boutset,c=1] ~ ~ ~ summon minecraft:husk ~ 48 ~ {PersistenceRequired:1b,UUIDMost:2899L,UUIDLeast:2899L,Attributes:[{Name:"generic.followRange",Base:152},{Name:"generic.knockbackResistance",Base:1f},{Name:"generic.movementSpeed",Base:0.13f}],Silent:1,Tags:["attacker","battacker","blue"]}

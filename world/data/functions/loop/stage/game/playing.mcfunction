@@ -7,14 +7,16 @@
 #時間
 function loop:timer
 
+execute @e[type=villager] ~ ~ ~ kill @e[tag=attacker,r=1]
+
 #單位分隊
 function stage:game/team
 
 #AI
-execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ function loop:ai/red if @e[tag=cmd,score_rAI_min=1,score_rAI=1]
-execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ function loop:ai/blue if @e[tag=cmd,score_bAI_min=1,score_bAI=1]
-execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ function loop:ai/yellow if @e[tag=cmd,score_yAI_min=1,score_yAI=1]
-execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ function loop:ai/green if @e[tag=cmd,score_gAI_min=1,score_gAI=1]
+execute @e[tag=cmd,score_ralive_min=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ function loop:ai/red if @e[tag=cmd,score_rAI_min=1,score_rAI=1]
+execute @e[tag=cmd,score_balive_min=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ function loop:ai/blue if @e[tag=cmd,score_bAI_min=1,score_bAI=1]
+execute @e[tag=cmd,score_yalive_min=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ function loop:ai/yellow if @e[tag=cmd,score_yAI_min=1,score_yAI=1]
+execute @e[tag=cmd,score_galive_min=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ function loop:ai/green if @e[tag=cmd,score_gAI_min=1,score_gAI=1]
 
 
 

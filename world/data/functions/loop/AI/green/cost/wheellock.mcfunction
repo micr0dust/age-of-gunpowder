@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 scoreboard players set @e[tag=cmd] gwheellock 1
-scoreboard players remove @e[tag=cmd] ggold 500
+scoreboard players remove @e[tag=cmd] ggold 300
 
 
 

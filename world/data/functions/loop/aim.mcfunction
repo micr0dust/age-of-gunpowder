@@ -22,7 +22,7 @@ execute @e[tag=range,team=team3] ~ ~ ~ function loop:aim/continue if @e[tag=buil
 
 execute @e[tag=range,team=team4] ~ ~ ~ function loop:aim/stop if @e[tag=s,team=!team4,r=19,type=!llama]
 execute @e[tag=range,team=team4] ~ ~ ~ function loop:aim/continue unless @e[tag=s,team=!team4,r=19,type=!llama]
-execute @e[tag=range,team=team4] ~ ~ ~ function loop:aim/continue if @e[tag=s,team=!team3,r=3,type=!llama]
+execute @e[tag=range,team=team4] ~ ~ ~ function loop:aim/continue if @e[tag=s,team=!team4,r=3,type=!llama]
 execute @e[tag=range,team=team4] ~ ~ ~ function loop:aim/continue if @e[tag=building,team=!team4,r=4]
 
 #步槍兵瞄準並減速

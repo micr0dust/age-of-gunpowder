@@ -38,6 +38,23 @@ scoreboard objectives add gmusket dummy
 scoreboard objectives add gswordman dummy
 scoreboard objectives add gspearman dummy
 scoreboard objectives add grider dummy
+
+scoreboard players set @e[tag=cmd] rmusket 1
+scoreboard players set @e[tag=cmd] rswordman 1
+scoreboard players set @e[tag=cmd] rspearman 1
+scoreboard players set @e[tag=cmd] rrider 1
+scoreboard players set @e[tag=cmd] bmusket 1
+scoreboard players set @e[tag=cmd] bswordman 1
+scoreboard players set @e[tag=cmd] bspearman 1
+scoreboard players set @e[tag=cmd] brider 1
+scoreboard players set @e[tag=cmd] ymusket 1
+scoreboard players set @e[tag=cmd] yswordman 1
+scoreboard players set @e[tag=cmd] yspearman 1
+scoreboard players set @e[tag=cmd] yrider 1
+scoreboard players set @e[tag=cmd] gmusket 1
+scoreboard players set @e[tag=cmd] gswordman 1
+scoreboard players set @e[tag=cmd] gspearman 1
+scoreboard players set @e[tag=cmd] grider 1
 #-----------------------------------------------------
 
 #隨機變數---------------------------------------------
@@ -85,8 +102,8 @@ scoreboard players set @e[tag=cmd] branch 0
 scoreboard objectives add init_manpower dummy
 scoreboard objectives add init_wood dummy
 scoreboard objectives add init_gold dummy
-scoreboard players set @e[tag=cmd] init_manpower 0
-scoreboard players set @e[tag=cmd] init_wood 0
+scoreboard players set @e[tag=cmd] init_manpower 300
+scoreboard players set @e[tag=cmd] init_wood 100
 scoreboard players set @e[tag=cmd] init_gold 0
 #隊伍
 #[1]--------------------------------------------------

@@ -5,6 +5,6 @@
 # By Microdust
 #########################################################################################################
 scoreboard players add @e[tag=cmd] terrain 1
-execute @e[tag=cmd,score_terrain_min=3] ~ ~ ~ scoreboard players set @e[tag=cmd] terrain 0
+execute @e[tag=cmd,score_terrain_min=10] ~ ~ ~ scoreboard players set @e[tag=cmd] terrain 0
 function stage:menu/custom%20game/terrain
 

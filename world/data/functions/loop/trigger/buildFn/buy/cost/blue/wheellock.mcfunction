@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 scoreboard players set @e[tag=cmd] bwheellock 1
-scoreboard players remove @e[tag=cmd] bgold 500
+scoreboard players remove @e[tag=cmd] bgold 300
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 
 

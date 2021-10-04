@@ -40,14 +40,17 @@ scoreboard players set @e[tag=pistol] pistol 1 {HandItems:[{id:"minecraft:purple
 function loop:timer/pistol/reload if @e[tag=cmd,score_time_min=1200,score_time=1200]
 execute @e[tag=pistol,score_pistol_min=1,c=1] ~ ~ ~ function loop:timer/pistol/aim
 
-
+#資源採集
 scoreboard players operation @e[tag=cmd] i = @e[tag=cmd] time
 scoreboard players set @e[tag=cmd] j 20
 scoreboard players operation @e[tag=cmd] i %= @e[tag=cmd] j
 function loop:timer/resource if @e[tag=cmd,score_i_min=0,score_i=0]
 
-
-
+#建築回血
+scoreboard players operation @e[tag=cmd] i = @e[tag=cmd] time
+scoreboard players set @e[tag=cmd] j 40
+scoreboard players operation @e[tag=cmd] i %= @e[tag=cmd] j
+execute @e[tag=cmd,score_i_min=0,score_i=0] ~ ~ ~ effect @e[tag=building] minecraft:regeneration 3 0 true
 
 
 

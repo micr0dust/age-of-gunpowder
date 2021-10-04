@@ -6,6 +6,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] rflintlock 1
 scoreboard players remove @e[tag=cmd] rgold 500
-
+scoreboard players set @e[tag=cmd] rswordman 0
+scoreboard players set @e[tag=cmd] rspearman 0
 
 

@@ -12,6 +12,6 @@ execute @e[tag=green] ~ ~ ~ execute @e[tag=s,type=!llama,r=0,c=1] ~ ~ ~ scoreboa
 execute @e[tag=green] ~ ~ ~ execute @e[tag=pretrain,r=0,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd] l 1
 execute @e[name=house,tag=green] ~ ~ ~ scoreboard players add @e[tag=cmd] j 100
 tellraw @p[team=green] ["",{"text":"---","color":"yellow"},{"translate":"aop.house","color":"yellow"},{"text":"-------------------","color":"yellow"}]
-tellraw @p[team=green] ["",{"text":"人口:","color":"yellow"},{"text":" "},{"score":{"name":"@e[tag=cmd]","objective":"l"},"color":"white"},{"text":" / "},{"score":{"name":"@e[tag=cmd]","objective":"i"},"color":"white"}]
-tellraw @p[team=green] ["",{"text":"人力上限:","color":"aqua"},{"text":" "},{"score":{"name":"@e[tag=cmd]","objective":"j"},"color":"white"}]
+tellraw @p[team=green] ["",{"translate":"aop.population","color":"yellow"},{"text":": ","color":"yellow"},{"score":{"name":"@e[tag=cmd]","objective":"l"},"color":"white"},{"text":" / "},{"score":{"name":"@e[tag=cmd]","objective":"i"},"color":"white"}]
+tellraw @p[team=green] ["",{"translate":"aop.manpower.limit","color":"aqua"},{"text":": ","color":"aqua"},{"score":{"name":"@e[tag=cmd]","objective":"j"},"color":"white"}]
 

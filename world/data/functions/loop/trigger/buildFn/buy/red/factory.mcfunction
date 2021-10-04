@@ -18,8 +18,8 @@ execute @e[tag=cmd,score_rwheellock_min=1,score_rflintlock=0] ~ ~ ~ execute @p[s
 execute @e[tag=cmd,score_rwheellock_min=1,score_rflintlock=0] ~ ~ ~ execute @p[score_buildFn_min=51,score_buildFn=51,team=red] ~ ~ ~ function loop:trigger/buildfn/buy/cost/red/flintlock if @e[tag=cmd,score_rgold_min=500]
 
 #簧輪式點火
-execute @e[tag=cmd,score_rwheellock=0] ~ ~ ~ execute @p[score_buildFn_min=51,score_buildFn=51,team=red] ~ ~ ~ function loop:trigger/build/buy/noresoure unless @e[tag=cmd,score_rgold_min=500]
-execute @e[tag=cmd,score_rwheellock=0] ~ ~ ~ execute @p[score_buildFn_min=51,score_buildFn=51,team=red] ~ ~ ~ function loop:trigger/buildfn/buy/cost/red/wheellock if @e[tag=cmd,score_rgold_min=500]
+execute @e[tag=cmd,score_rwheellock=0] ~ ~ ~ execute @p[score_buildFn_min=51,score_buildFn=51,team=red] ~ ~ ~ function loop:trigger/build/buy/noresoure unless @e[tag=cmd,score_rgold_min=300]
+execute @e[tag=cmd,score_rwheellock=0] ~ ~ ~ execute @p[score_buildFn_min=51,score_buildFn=51,team=red] ~ ~ ~ function loop:trigger/buildfn/buy/cost/red/wheellock if @e[tag=cmd,score_rgold_min=300]
 
 
 scoreboard players set @a[team=red] buildFn 0

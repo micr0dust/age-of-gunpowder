@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 execute @e[tag=blue,name=barracks,c=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"rifleman",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","blue"]}
-scoreboard players remove @e[tag=cmd] bmanpower 100
+scoreboard players remove @e[tag=cmd] bmanpower 500
 scoreboard players remove @e[tag=cmd] bgold 30
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 

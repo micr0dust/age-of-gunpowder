@@ -6,6 +6,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] gflintlock 1
 scoreboard players remove @e[tag=cmd] ggold 500
-
+scoreboard players set @e[tag=cmd] gswordman 0
+scoreboard players set @e[tag=cmd] gspearman 0
 
 
