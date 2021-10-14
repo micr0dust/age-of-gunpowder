@@ -4,10 +4,15 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
+## menu
 #選顏色(1紅2藍3黃4綠)
 scoreboard objectives add team trigger
 #選隊(1紅2藍3黃4綠)
 scoreboard objectives add chooseTeam trigger
+#教學選單(1規則2兵種3快鍵)
+scoreboard objectives add tutorial trigger
+
+## game
 #建築(0領土、1森林、2金礦、3指揮中心、4城堡、5工廠、6軍營、7馬廄、8房舍、9塔、10牆)
 scoreboard objectives add building trigger
 scoreboard players enable @a building
@@ -27,8 +32,9 @@ scoreboard players enable @a stype
 #軍隊控制
 scoreboard objectives add sctrl trigger
 scoreboard players enable @a sctrl
-
-
+#軍隊控制
+scoreboard objectives add switch trigger
+scoreboard players enable @a switch
 
 
 

@@ -77,8 +77,8 @@ function loop:ai/yellow/barracks if @e[tag=cmd,score_ywood_min=600]
 execute @e[name=factory,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/wheellock if @e[tag=cmd,score_ygold_min=500,score_ywheellock=0]
 #餘額升級
 execute @e[name=factory,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/flintlock if @e[tag=cmd,score_ygold_min=500,score_ywheellock_min=1,score_yflintlock=0]
-#孤立領土自刪
-#kill @e[tag=yellow,score_connect=0,score_connect_min=0]
+#孤立資源領土自刪
+execute @e[tag=yellow,score_connect=0,score_connect_min=0] ~ ~ ~ function @@@:suicide if @e[r=2,score_resourceType_min=1]
 #投降
 execute @e[tag=cmd,score_ymanpower_ef=7] ~ ~ ~ execute @e[name=commandcenter,tag=yellow] ~ ~ ~ function @@@:suicide if @e[tag=!yellow,type=vindication_illager,r=33]
 #execute @e[name=commandcenter,tag=yellow] ~ ~ ~ function @@@:suicide if @e[tag=!yellow,type=shulker,name=territory,r=40]

@@ -47,7 +47,8 @@ execute @e[tag=cmd,score_i=4] ~ ~ ~ tellraw @a ["",{"text":"[","color":"yellow"}
 scoreboard players enable @a team
 scoreboard players enable @a chooseTeam
 playsound minecraft:block.note.pling record @a ~ ~ ~ 1 0.749
-
+scoreboard players set @e[tag=cmd] stage 0
+scoreboard players set @e[tag=cmd] branch 2
 
 
 

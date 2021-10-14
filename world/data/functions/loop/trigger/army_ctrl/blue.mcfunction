@@ -5,6 +5,7 @@
 # By Microdust
 #########################################################################################################
 execute @e[tag=cmd,score_bmusket_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=blue] ~ ~ ~ execute @e[tag=blue,r=10] ~ ~ ~ scoreboard players tag @e[tag=range,r=0,c=1] add bs_flaged
+execute @e[tag=cmd,score_bmusket_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=blue] ~ ~ ~ execute @e[tag=blue,r=10] ~ ~ ~ scoreboard players tag @e[tag=long_range,r=0,c=1] add bs_flaged
 execute @e[tag=cmd,score_bswordman_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=blue] ~ ~ ~ execute @e[tag=blue,r=10] ~ ~ ~ scoreboard players tag @e[tag=swordman,r=0,c=1] add bs_flaged
 execute @e[tag=cmd,score_bspearman_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=blue] ~ ~ ~ execute @e[tag=blue,r=10] ~ ~ ~ scoreboard players tag @e[tag=spearman,r=0,c=1] add bs_flaged
 execute @e[tag=cmd,score_brider_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=blue] ~ ~ ~ execute @e[tag=blue,r=10] ~ ~ ~ scoreboard players tag @e[tag=rider,r=0,c=1] add bs_flaged

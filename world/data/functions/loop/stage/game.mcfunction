@@ -11,10 +11,6 @@ function loop:stage/game/playing if @e[score_branch=2,score_branch_min=2]
 #end
 function loop:stage/game/end if @e[score_branch=3,score_branch_min=3]
 
-
-#玩家高度限制
-execute @a[x=0,y=0,z=0,dx=108,dy=50,dz=108] ~ ~ ~ tp @p ~ 51 ~
-
 #建築破壞偵測
 execute @e[tag=ctrl,score_buildType_min=1,score_resourceType=0] ~ ~1 ~ function stage:game/destory/territory unless @e[tag=building,r=0]
 execute @e[tag=ctrl,score_buildType_min=1,score_resourceType_min=1,score_resourceType=1] ~ ~1 ~ function stage:game/destory/forest unless @e[tag=building,r=0]

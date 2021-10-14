@@ -7,6 +7,7 @@
 scoreboard players remove @e[tag=cmd] ymanpower 1
 scoreboard players remove @e[tag=cmd] ymanpower_ef 1
 scoreboard players add @e[tag=cmd] ygold 1
+scoreboard players add @e[tag=cmd] Ygolds 1
 scoreboard players add @e[tag=cmd] ygold_ef 1
 
 

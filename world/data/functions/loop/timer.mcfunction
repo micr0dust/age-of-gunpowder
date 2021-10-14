@@ -38,7 +38,10 @@ execute @e[tag=new] ~ ~ ~ function loop:timer/pistol/reload
 scoreboard players tag @e[tag=pistol] remove new
 scoreboard players set @e[tag=pistol] pistol 1 {HandItems:[{id:"minecraft:purple_glazed_terracotta"},{}]}
 function loop:timer/pistol/reload if @e[tag=cmd,score_time_min=1200,score_time=1200]
-execute @e[tag=pistol,score_pistol_min=1,c=1] ~ ~ ~ function loop:timer/pistol/aim
+scoreboard players operation @e[tag=cmd] i = @e[tag=cmd] time
+scoreboard players set @e[tag=cmd] j 10
+scoreboard players operation @e[tag=cmd] i %= @e[tag=cmd] j
+execute @e[tag=cmd,score_i_min=0,score_i=0] ~ ~ ~ execute @e[tag=pistol,score_pistol_min=1,c=1] ~ ~ ~ function loop:timer/pistol/aim
 
 #資源採集
 scoreboard players operation @e[tag=cmd] i = @e[tag=cmd] time

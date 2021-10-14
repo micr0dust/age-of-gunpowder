@@ -5,6 +5,7 @@
 # By Microdust
 #########################################################################################################
 execute @e[tag=cmd,score_ymusket_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=yellow] ~ ~ ~ execute @e[tag=yellow,r=10] ~ ~ ~ scoreboard players tag @e[tag=range,r=0,c=1] add ys_flaged
+execute @e[tag=cmd,score_ymusket_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=yellow] ~ ~ ~ execute @e[tag=yellow,r=10] ~ ~ ~ scoreboard players tag @e[tag=long_range,r=0,c=1] add ys_flaged
 execute @e[tag=cmd,score_yswordman_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=yellow] ~ ~ ~ execute @e[tag=yellow,r=10] ~ ~ ~ scoreboard players tag @e[tag=swordman,r=0,c=1] add ys_flaged
 execute @e[tag=cmd,score_yspearman_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=yellow] ~ ~ ~ execute @e[tag=yellow,r=10] ~ ~ ~ scoreboard players tag @e[tag=spearman,r=0,c=1] add ys_flaged
 execute @e[tag=cmd,score_yrider_min=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=yellow] ~ ~ ~ execute @e[tag=yellow,r=10] ~ ~ ~ scoreboard players tag @e[tag=rider,r=0,c=1] add ys_flaged

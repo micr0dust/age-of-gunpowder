@@ -290,8 +290,51 @@ scoreboard objectives add g_musket dummy
 scoreboard objectives add g_swordman dummy
 scoreboard objectives add g_spearman dummy
 scoreboard objectives add g_rider dummy
-
-
+#兵種
+#R
+scoreboard objectives add Runits dummy
+scoreboard players set @e[tag=cmd] Runits 0
+scoreboard objectives add Rmanpowers dummy
+scoreboard players set @e[tag=cmd] Rmanpowers 0
+scoreboard objectives add Rwoods dummy
+scoreboard players set @e[tag=cmd] Rwoods 0
+scoreboard objectives add Rgolds dummy
+scoreboard players set @e[tag=cmd] Rgolds 0
+scoreboard objectives add Rterritories dummy
+scoreboard players set @e[tag=cmd] Rterritories 0
+#B
+scoreboard objectives add Bunits dummy
+scoreboard players set @e[tag=cmd] Bunits 0
+scoreboard objectives add Bmanpowers dummy
+scoreboard players set @e[tag=cmd] Bmanpowers 0
+scoreboard objectives add Bwoods dummy
+scoreboard players set @e[tag=cmd] Bwoods 0
+scoreboard objectives add Bgolds dummy
+scoreboard players set @e[tag=cmd] Bgolds 0
+scoreboard objectives add Bterritories dummy
+scoreboard players set @e[tag=cmd] Bterritories 0
+#Y
+scoreboard objectives add Yunits dummy
+scoreboard players set @e[tag=cmd] Yunits 0
+scoreboard objectives add Ymanpowers dummy
+scoreboard players set @e[tag=cmd] Ymanpowers 0
+scoreboard objectives add Ywoods dummy
+scoreboard players set @e[tag=cmd] Ywoods 0
+scoreboard objectives add Ygolds dummy
+scoreboard players set @e[tag=cmd] Ygolds 0
+scoreboard objectives add Yterritories dummy
+scoreboard players set @e[tag=cmd] Yterritories 0
+#G
+scoreboard objectives add Gunits dummy
+scoreboard players set @e[tag=cmd] Gunits 0
+scoreboard objectives add Gmanpowers dummy
+scoreboard players set @e[tag=cmd] Gmanpowers 0
+scoreboard objectives add Gwoods dummy
+scoreboard players set @e[tag=cmd] Gwoods 0
+scoreboard objectives add Ggolds dummy
+scoreboard players set @e[tag=cmd] Ggolds 0
+scoreboard objectives add Gterritories dummy
+scoreboard players set @e[tag=cmd] Gterritories 0
 
 
 

@@ -15,7 +15,7 @@ execute @a ~ ~ ~ function console:player_init unless @p[r=0,score_init=1,score_i
 #├────────────────┼─────┬────────────────────────────────────────────────────
 #│                │ @p  │ 0[none]、4[techTree]、5[update]
 #│    0[menu]     ├─────┼────────────────────────────────────────────────────
-#│                │ cmd │ 0[main]、1[tuition]、2[custom battle]、3[campaign]
+#│                │ cmd │ 0[main]、1[test mode]、2[custom battle]、3[campaign]
 #├────────────────┼─────┼────────────────────────────────────────────────────
 #│                │ @p  │
 #│    1[game]     ├─────┼────────────────────────────────────────────────────
@@ -36,6 +36,7 @@ function loop:stage/anime if @e[score_stage=2,score_stage_min=2]
 #scoreboard players tag @e[name=Grumm] add trash {OnGround:1b}
 #kill @e[name=Grumm,tag=trash]
 scoreboard players tag @e[tag=horse] add trash
+scoreboard players tag @a add trash
 execute @e[tag=rider,team=team1] ~ ~ ~ scoreboard players tag @e[tag=horse,r=2,team=team1] remove trash
 execute @e[tag=rider,team=team2] ~ ~ ~ scoreboard players tag @e[tag=horse,r=2,team=team2] remove trash
 execute @e[tag=rider,team=team3] ~ ~ ~ scoreboard players tag @e[tag=horse,r=2,team=team3] remove trash
@@ -46,11 +47,13 @@ scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:glass_bottle
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:saddle"}}
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:carpet"}}
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:iron_horse_armor"}}
+scoreboard players tag @a[r=300] remove trash
 scoreboard players tag @e[score_trash_min=1] add trash
 kill @e[tag=trash]
 
-
-
+#玩家高度限制
+#execute @a[x=0,y=0,z=0,dx=108,dy=50,dz=108] ~ ~ ~ tp @p ~ 51 ~
+execute @a[x=-5,y=0,z=-5,dx=113,dy=50,dz=113] ~ ~ ~ tp @p ~ 51 ~
 
 
 

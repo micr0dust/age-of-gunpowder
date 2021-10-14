@@ -5,6 +5,7 @@
 # By Microdust
 #########################################################################################################
 function @@@:chatbar_clear
+function @@@:map_clear
 title @a actionbar ["",{"translate":"aop.terrain_creating","color":"dark_green"}]
 scoreboard players set @e[tag=ctrl] resourceType 0
 scoreboard players set @e[tag=ctrl] buildType 0

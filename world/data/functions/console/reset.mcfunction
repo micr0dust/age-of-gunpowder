@@ -4,9 +4,14 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
+function @@@:chatbar_clear_all
+kill @e[type=!Player]
 function create:ctrl
 function @@@:map_clear
-kill @e[type=!Player]
+function summon:terrain/lobby
+execute @e[tag=building] ~ ~ ~ scoreboard players set @e[tag=ctrl,r=1,c=1] buildType 1
+function console:summon
+function create:ctrl
 function console:var
 function create:ctrl
 scoreboard teams leave red @a
@@ -15,8 +20,6 @@ scoreboard teams leave green @a
 scoreboard teams leave yellow @a
 scoreboard players set @e[tag=cmd] stage 0
 scoreboard players set @e[tag=cmd] branch 0
-function stage:menu/main
-
 
 
 

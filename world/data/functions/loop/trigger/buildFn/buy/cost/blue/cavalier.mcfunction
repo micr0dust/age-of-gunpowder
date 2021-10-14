@@ -8,5 +8,5 @@ execute @e[tag=blue,name=stable,c=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Custo
 scoreboard players remove @e[tag=cmd] bmanpower 200
 scoreboard players remove @e[tag=cmd] bgold 50
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
-
+scoreboard players add @e[tag=cmd] Bunits 1
 

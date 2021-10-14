@@ -5,6 +5,6 @@
 # By Microdust
 #########################################################################################################
 title @p times 0 20 0
-title @p subtitle {"text":"建造更多房舍以提高上限","color":"white"}
-title @p title {"text":"已達人口上限","bold":true,"color":"dark_red"}
+title @p subtitle {"translate":"aop.pop.full.sub","color":"white"}
+title @p title {"translate":"aop.pop.full.title","bold":true,"color":"dark_red"}
 playsound minecraft:item.shield.break block @p

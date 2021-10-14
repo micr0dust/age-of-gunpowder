@@ -8,5 +8,6 @@ execute @e[tag=yellow,name=barracks,c=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {C
 scoreboard players remove @e[tag=cmd] ymanpower 100
 scoreboard players remove @e[tag=cmd] ygold 30
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
+scoreboard players add @e[tag=cmd] Yunits 1
 
 

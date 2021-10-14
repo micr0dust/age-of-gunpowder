@@ -76,8 +76,8 @@ function loop:ai/blue/barracks if @e[tag=cmd,score_bwood_min=600]
 execute @e[name=factory,tag=blue,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/blue/cost/wheellock if @e[tag=cmd,score_bgold_min=500,score_bwheellock=0]
 #餘額升級
 execute @e[name=factory,tag=blue,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/blue/cost/flintlock if @e[tag=cmd,score_bgold_min=500,score_bwheellock_min=1,score_bflintlock=0]
-#孤立領土自刪
-#kill @e[tag=blue,score_connect=0,score_connect_min=0]
+#孤立資源領土自刪
+execute @e[tag=blue,score_connect=0,score_connect_min=0] ~ ~ ~ function @@@:suicide if @e[r=2,score_resourceType_min=1]
 #投降
 execute @e[tag=cmd,score_bmanpower_ef=7] ~ ~ ~ execute @e[name=commandcenter,tag=blue] ~ ~ ~ function @@@:suicide if @e[tag=!blue,type=vindication_illager,r=33]
 #execute @e[name=commandcenter,tag=blue] ~ ~ ~ function @@@:suicide if @e[tag=!blue,type=shulker,name=territory,r=40]
