@@ -10,7 +10,7 @@ tellraw @p {"text":"﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉"}
 #*43
 tellraw @p {"translate":"%s 12.5","color":"white","with":[{"translate":"aop.menu.tutorial.unit.speed","color":"yellow"}]}
 tellraw @p {"translate":"%s 6","color":"white","with":[{"translate":"aop.menu.tutorial.unit.weapon","color":"yellow"}]}
-tellraw @p {"translate":"%s 12","color":"white","with":[{"translate":"aop.menu.tutorial.unit.damage","color":"yellow"}]}
+tellraw @p {"translate":"%s 6","color":"white","with":[{"translate":"aop.menu.tutorial.unit.damage","color":"yellow"}]}
 tellraw @p {"translate":"%s 7","color":"white","with":[{"translate":"aop.menu.tutorial.unit.range","color":"yellow"}]}
 tellraw @p {"translate":"%s 60(?)","color":"white","with":[{"translate":"aop.menu.tutorial.unit.rate","color":"yellow"}]}
 tellraw @p {"translate":"%s %s","color":"white","with":[{"translate":"aop.menu.tutorial.unit.improve","color":"yellow"},{"translate":"aop.wheellock"}]}
