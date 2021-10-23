@@ -26,6 +26,8 @@ execute @p[score_tutorial_min=27,score_tutorial=27] ~ ~ ~ function loop:trigger/
 execute @p[score_tutorial_min=28,score_tutorial=28] ~ ~ ~ function loop:trigger/tutorial/units/reiter
 execute @p[score_tutorial_min=3,score_tutorial=3] ~ ~ ~ function loop:trigger/tutorial/keyboard
 execute @p[score_tutorial_min=100,score_tutorial=100] ~ ~ ~ function stage:menu/tutorial
+execute @p[score_mode_min=1,m=2] ~ ~ ~ function loop:trigger/mode/g3
+execute @p[score_mode_min=1,m=3] ~ ~ ~ function loop:trigger/mode/g2
 
 
 

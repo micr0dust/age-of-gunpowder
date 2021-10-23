@@ -86,7 +86,7 @@ scoreboard players set @e[tag=cmd] branch 0
 #├────────────────┼─────┬────────────────────────────────────────────────────
 #│                │ @p  │ 0[none]、4[techTree]、5[update]
 #│    0[menu]     ├─────┼────────────────────────────────────────────────────
-#│                │ cmd │ 0[main]、1[tuition]、2[custom battle]、3[campaign]
+#│                │ cmd │ 0[main]、1[save]、2[custom battle]
 #├────────────────┼─────┼────────────────────────────────────────────────────
 #│                │ @p  │
 #│    1[game]     ├─────┼────────────────────────────────────────────────────
@@ -335,10 +335,35 @@ scoreboard objectives add Ggolds dummy
 scoreboard players set @e[tag=cmd] Ggolds 0
 scoreboard objectives add Gterritories dummy
 scoreboard players set @e[tag=cmd] Gterritories 0
-
-
-
-
+#-存檔----------------------------------------------
+#隊伍
+scoreboard objectives add Rsave_team dummy
+scoreboard objectives add Bsave_team dummy
+scoreboard objectives add Ysave_team dummy
+scoreboard objectives add Gsave_team dummy
+#資源
+scoreboard objectives add Rsave_manpower dummy
+scoreboard objectives add Bsave_manpower dummy
+scoreboard objectives add Ysave_manpower dummy
+scoreboard objectives add Gsave_manpower dummy
+scoreboard objectives add Rsave_wood dummy
+scoreboard objectives add Bsave_wood dummy
+scoreboard objectives add Ysave_wood dummy
+scoreboard objectives add Gsave_wood dummy
+scoreboard objectives add Rsave_gold dummy
+scoreboard objectives add Bsave_gold dummy
+scoreboard objectives add Ysave_gold dummy
+scoreboard objectives add Gsave_gold dummy
+#存活
+scoreboard objectives add Rsave_alive dummy
+scoreboard objectives add Bsave_alive dummy
+scoreboard objectives add Ysave_alive dummy
+scoreboard objectives add Gsave_alive dummy
+#科技
+scoreboard objectives add Rsave_tech dummy
+scoreboard objectives add Bsave_tech dummy
+scoreboard objectives add Ysave_tech dummy
+scoreboard objectives add Gsave_tech dummy
 
 
 

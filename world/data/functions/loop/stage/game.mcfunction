@@ -10,6 +10,8 @@ function loop:stage/game/pause if @e[score_branch=1,score_branch_min=1]
 function loop:stage/game/playing if @e[score_branch=2,score_branch_min=2]
 #end
 function loop:stage/game/end if @e[score_branch=3,score_branch_min=3]
+#save
+function loop:stage/game/save if @e[score_branch=4,score_branch_min=4]
 
 #建築破壞偵測
 execute @e[tag=ctrl,score_buildType_min=1,score_resourceType=0] ~ ~1 ~ function stage:game/destory/territory unless @e[tag=building,r=0]

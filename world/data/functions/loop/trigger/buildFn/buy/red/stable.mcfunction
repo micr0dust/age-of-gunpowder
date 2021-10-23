@@ -22,4 +22,3 @@ execute @e[tag=cmd,score_rwheellock_min=1] ~ ~ ~ execute @p[score_buildFn_min=74
 
 scoreboard players set @a[team=red] buildFn 0
 scoreboard players enable @a[team=red] buildFn
-

@@ -5,8 +5,9 @@
 # By Microdust
 #########################################################################################################
 function @@@:chatbar_clear_all
-kill @e[type=!Player]
+kill @e[type=!Player,tag=!save]
 function create:ctrl
+function structures:save/function/rm
 function @@@:map_clear
 function summon:terrain/lobby
 execute @e[tag=building] ~ ~ ~ scoreboard players set @e[tag=ctrl,r=1,c=1] buildType 1

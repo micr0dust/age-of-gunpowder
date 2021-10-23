@@ -11,6 +11,8 @@ scoreboard objectives add team trigger
 scoreboard objectives add chooseTeam trigger
 #教學選單(1規則2兵種3快鍵)
 scoreboard objectives add tutorial trigger
+#大廳模式切換
+scoreboard objectives add mode trigger
 
 ## game
 #建築(0領土、1森林、2金礦、3指揮中心、4城堡、5工廠、6軍營、7馬廄、8房舍、9塔、10牆)

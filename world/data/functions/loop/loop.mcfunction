@@ -47,6 +47,7 @@ scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:glass_bottle
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:saddle"}}
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:carpet"}}
 scoreboard players tag @e[type=Item] add trash {Item:{id:"minecraft:iron_horse_armor"}}
+scoreboard players tag @e[type=Item] add trash {OnGround:1b}
 scoreboard players tag @a[r=300] remove trash
 scoreboard players tag @e[score_trash_min=1] add trash
 kill @e[tag=trash]

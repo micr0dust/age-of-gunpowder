@@ -9,4 +9,3 @@ scoreboard players remove @e[tag=cmd] rmanpower 200
 scoreboard players remove @e[tag=cmd] rgold 20
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 scoreboard players add @e[tag=cmd] Runits 1
-

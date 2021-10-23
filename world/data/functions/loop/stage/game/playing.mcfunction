@@ -87,6 +87,10 @@ execute @e[tag=swordman,score_onground_min=1] ~ ~ ~ entitydata @e[tag=yellow,r=0
 execute @e[tag=swordman,score_onground_min=1] ~ ~ ~ entitydata @e[tag=green,r=0,c=1] {CustomName:"§2⧩"}
 scoreboard players set @e[tag=rider] onground 0 {OnGround:1b}
 scoreboard players tag @e[tag=rider] remove rider {OnGround:1b}
+scoreboard players tag @e[tag=knight] remove knight {OnGround:1b}
+scoreboard players tag @e[tag=cavalier] remove cavalier {OnGround:1b}
+scoreboard players tag @e[tag=light_cavalry] remove light_cavalry {OnGround:1b}
+scoreboard players tag @e[tag=reiter] remove reiter {OnGround:1b}
 scoreboard players tag @e[tag=pistol] remove pistol {OnGround:1b}
 
 
