@@ -33,14 +33,14 @@ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @p[score_sctrl_min=1
 execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_sctrl_min=1,team=green] ~ ~ ~ function loop:trigger/army_ctrl/green
 #地圖切換
 execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ execute @p[score_switch_min=1,score_switch=1,team=red] ~ ~ ~ function stage:game/minimap/red
-execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ execute @p[score_renounce_min=1,score_switch=1,team=blue] ~ ~ ~ function stage:game/minimap/blue
-execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @p[score_renounce_min=1,score_switch=1,team=yellow] ~ ~ ~ function stage:game/minimap/yellow
-execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_renounce_min=1,score_switch=1,team=green] ~ ~ ~ function stage:game/minimap/green
+execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ execute @p[score_switch_min=1,score_switch=1,team=blue] ~ ~ ~ function stage:game/minimap/blue
+execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @p[score_switch_min=1,score_switch=1,team=yellow] ~ ~ ~ function stage:game/minimap/yellow
+execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_switch_min=1,score_switch=1,team=green] ~ ~ ~ function stage:game/minimap/green
 #軍隊控制切換
 execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ execute @p[score_switch_min=2,score_switch=2,team=red] ~ ~ ~ function stage:game/lead/red
-execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ execute @p[score_renounce_min=2,score_switch=2,team=blue] ~ ~ ~ function stage:game/lead/blue
-execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @p[score_renounce_min=2,score_switch=2,team=yellow] ~ ~ ~ function stage:game/lead/yellow
-execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_renounce_min=2,score_switch=2,team=green] ~ ~ ~ function stage:game/lead/green
+execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ execute @p[score_switch_min=2,score_switch=2,team=blue] ~ ~ ~ function stage:game/lead/blue
+execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @p[score_switch_min=2,score_switch=2,team=yellow] ~ ~ ~ function stage:game/lead/yellow
+execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_switch_min=2,score_switch=2,team=green] ~ ~ ~ function stage:game/lead/green
 
 
 

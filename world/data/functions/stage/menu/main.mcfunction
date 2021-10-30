@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 function console:var
-function @@@:chatbar_clear
+function @@@:chatbar_clear_all
 scoreboard teams join spectator @a
 tellraw @a ["",{"text":"---","color":"yellow"},{"translate":"aop.menu.menu","color":"yellow"},{"text":"------------------","color":"yellow"}]
 tellraw @a {"translate":"[%s]","with":[{"translate":"aop.menu.btn.custom_game","color":"white"}],"color":"gold","clickEvent":{"action":"run_command","value":"/function stage:menu/custom%20game/team"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.menu.btn.custom_game.hover"}]}}

@@ -6,7 +6,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] stage 0
 scoreboard players set @e[tag=cmd] branch 2
-function @@@:chatbar_clear
+function @@@:chatbar_clear_all
 tellraw @a ["",{"text":"---","color":"yellow"},{"translate":"aop.team","color":"yellow"},{"text":"--------------------","color":"yellow"}]
 
 scoreboard players set @e[tag=cmd] b 1

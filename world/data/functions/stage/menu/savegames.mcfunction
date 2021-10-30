@@ -4,7 +4,7 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-function @@@:chatbar_clear
+function @@@:chatbar_clear_all
 tellraw @p ["",{"text":"---","color":"yellow"},{"translate":"aop.menu.savegames","color":"yellow"},{"text":"------------------","color":"yellow"}]
 tellraw @p {"translate":"[%s]","with":[{"translate":"aop.save.a","color":"white"}],"color":"gold","clickEvent":{"action":"run_command","value":"/function stage:menu/save/team"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.menu.savegames.hover"}]}}
 tellraw @p ["",{"text":"---------------------------","color":"yellow"}]

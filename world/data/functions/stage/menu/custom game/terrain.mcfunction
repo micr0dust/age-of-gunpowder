@@ -4,7 +4,7 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-function @@@:chatbar_clear
+function @@@:chatbar_clear_all
 tellraw @a ["",{"text":" [<]","color":"yellow","clickEvent":{"action":"run_command","value":"/function stage:menu/custom%20game/terrain/last"}},{"text":" <      ","color":"yellow"},{"translate":"aop.terrain","color":"yellow"},{"text":"      > ","color":"yellow"},{"text":"[>]","color":"yellow","clickEvent":{"action":"run_command","value":"/function stage:menu/custom%20game/terrain/next"}}]
 execute @e[tag=cmd,score_terrain_min=0,score_terrain=0] ~ ~ ~ function stage:menu/custom%20game/terrain/random
 execute @e[tag=cmd,score_terrain_min=1,score_terrain=1] ~ ~ ~ function stage:menu/custom%20game/terrain/flat
