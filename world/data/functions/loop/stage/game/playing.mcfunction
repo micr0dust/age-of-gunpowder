@@ -60,7 +60,10 @@ execute @e[tag=s,team=!team4] ~ ~ ~ effect @e[tag=defence,team=team4,r=5] minecr
 
 #單位反馬
 scoreboard players set @e[tag=horse] trash -4
-execute @e[tag=antihorse] ~ ~ ~ scoreboard players add @e[tag=horse,c=1,r=3,score_trash=0] trash 1
+execute @e[tag=antihorse,team=team1] ~ ~ ~ scoreboard players add @e[tag=horse,team=!team1,c=1,r=3,score_trash=0] trash 1
+execute @e[tag=antihorse,team=team2] ~ ~ ~ scoreboard players add @e[tag=horse,team=!team2,c=1,r=3,score_trash=0] trash 1
+execute @e[tag=antihorse,team=team3] ~ ~ ~ scoreboard players add @e[tag=horse,team=!team3,c=1,r=3,score_trash=0] trash 1
+execute @e[tag=antihorse,team=team4] ~ ~ ~ scoreboard players add @e[tag=horse,team=!team4,c=1,r=3,score_trash=0] trash 1
 
 #砲台旁無人被敵軍摧毀
 execute @e[tag=tower,team=team1] ~ ~ ~ execute @e[tag=s,team=!team1,r=4] ~ ~ ~ execute @e[tag=tower,team=team1,r=4] ~ ~ ~ function stage:game/cannon_occupied unless @e[tag=s,team=team1,r=5]
