@@ -19,8 +19,11 @@ execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ 
 title @a times 0 10 0
 title @a subtitle {"translate":"aop.pause.title","bold":true,"color":"dark_gray"}
 title @a title {"text":""}
-
-
+#繼續遊戲快鍵
+scoreboard players set @a offHand 0 {Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b}]}
+execute @a[score_offHand=0,score_offHand_min=0] ~ ~ ~ trigger buildFn set 31
+execute @a[score_offHand_min=0] ~ ~ ~ function loop:hotkey/format
+scoreboard players set @a[score_offHand_min=0] offHand -1
 
 
 

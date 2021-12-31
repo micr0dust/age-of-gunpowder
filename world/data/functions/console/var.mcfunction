@@ -364,18 +364,26 @@ scoreboard objectives add Rsave_tech dummy
 scoreboard objectives add Bsave_tech dummy
 scoreboard objectives add Ysave_tech dummy
 scoreboard objectives add Gsave_tech dummy
-
-
-
-
-
-
-
-
-
-
-
-
+#-熱鍵----------------------------------------------
+#enable
+scoreboard objectives add hotKey dummy
+scoreboard players set @e[tag=cmd] hotKey 1
+#副手偵測
+scoreboard objectives add offHand dummy
+scoreboard players set @a offHand -1
+#右鍵偵測
+scoreboard objectives add rightClick dummy
+scoreboard players set @a rightClick -1
+scoreboard objectives add click stat.useItem.minecraft.carrot_on_a_stick
+#Q鍵偵測
+scoreboard objectives add keyQ dummy
+scoreboard players set @a keyQ -1
+scoreboard objectives add drop stat.drop
+#已檢視過
+scoreboard objectives add Rviewed dummy
+scoreboard objectives add Bviewed dummy
+scoreboard objectives add Yviewed dummy
+scoreboard objectives add Gviewed dummy
 
 
 

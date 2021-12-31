@@ -11,8 +11,6 @@ execute @a[tag=!menu] ~ ~ ~ function stage:menu/tutorial if @e[name=castle,tag=g
 scoreboard players tag @a[tag=menu] remove menu
 execute @e[tag=building] ~ ~ ~ scoreboard players tag @a[r=4,tag=!menu] add menu
 scoreboard players enable @a tutorial
-gamemode 3 @a[m=1,name=!micro_dust]
-gamemode 2 @a[m=0]
 
 
 

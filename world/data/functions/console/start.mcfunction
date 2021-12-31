@@ -13,7 +13,14 @@ scoreboard players set @a status 1
 function console:terrain_create
 execute @e[tag=building] ~ ~ ~ scoreboard players set @e[tag=ctrl,r=1,c=1] buildType 1
 function console:summon
-gamemode 3 @a
+scoreboard players tag @p[team=red] add isPlayer
+scoreboard players tag @p[team=blue] add isPlayer
+scoreboard players tag @p[team=yellow] add isPlayer
+scoreboard players tag @p[team=green] add isPlayer
+scoreboard teams join spectator @a[tag=!isPlayer]
+gamemode 1 @a
+gamemode 3 @a[team=spectator]
+scoreboard players tag @a remove isPlayer
 function console:team
 fill 0 46 0 0 45 2 minecraft:air
 fill 0 45 0 0 45 2 minecraft:barrier
@@ -40,7 +47,7 @@ execute @e[tag=cmd,score_galive=0] ~ ~ ~ kill @e[tag=green]
 function @@@:resource_init
 scoreboard players set @e[tag=cmd] stage 1
 scoreboard players set @e[tag=cmd] branch 2
-
+function loop:hotkey/format
 
 
 

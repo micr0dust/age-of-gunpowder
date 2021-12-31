@@ -55,6 +55,6 @@ kill @e[tag=trash]
 #玩家高度限制
 #execute @a[x=0,y=0,z=0,dx=108,dy=50,dz=108] ~ ~ ~ tp @p ~ 51 ~
 execute @a[x=-5,y=0,z=-5,dx=113,dy=50,dz=113] ~ ~ ~ tp @p ~ 51 ~
-
-
+#禁止傷害
+effect @a minecraft:weakness 100 255 true
 

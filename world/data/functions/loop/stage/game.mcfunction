@@ -37,7 +37,7 @@ execute @e[tag=rflag] ~ ~ ~ function @@@:suicide unless @e[tag=red,r=10]
 execute @e[tag=bflag] ~ ~ ~ function @@@:suicide unless @e[tag=blue,r=10]
 execute @e[tag=yflag] ~ ~ ~ function @@@:suicide unless @e[tag=yellow,r=10]
 execute @e[tag=gflag] ~ ~ ~ function @@@:suicide unless @e[tag=green,r=10]
-
-
+#快鍵偵測
+function loop:hotkey/drop if @e[tag=cmd,score_hotKey_min=1]
 
 

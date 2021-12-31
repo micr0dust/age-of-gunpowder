@@ -46,4 +46,3 @@ execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ execute @p[score_switch_min=2
 
 
 
-

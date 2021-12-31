@@ -21,7 +21,8 @@ scoreboard teams leave green @a
 scoreboard teams leave yellow @a
 scoreboard players set @e[tag=cmd] stage 0
 scoreboard players set @e[tag=cmd] branch 0
-
+clear @a
+spreadplayers 54 53 2 18 false @a[team=!spectator]
 
 
 

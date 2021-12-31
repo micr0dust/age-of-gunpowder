@@ -95,13 +95,13 @@ scoreboard players tag @e[tag=cavalier] remove cavalier {OnGround:1b}
 scoreboard players tag @e[tag=light_cavalry] remove light_cavalry {OnGround:1b}
 scoreboard players tag @e[tag=reiter] remove reiter {OnGround:1b}
 scoreboard players tag @e[tag=pistol] remove pistol {OnGround:1b}
-
-
-
+#快鍵偵測
+function loop:hotkey/off_hand if @e[tag=cmd,score_hotKey_min=1]
+function loop:hotkey/right_click if @e[tag=cmd,score_hotKey_min=1]
 #結束偵測
 function loop:endgame
-
-
+#隱形
+effect @a minecraft:invisibility 20 0 true
 
 
 

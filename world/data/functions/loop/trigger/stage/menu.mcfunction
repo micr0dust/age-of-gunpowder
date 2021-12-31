@@ -25,15 +25,12 @@ execute @p[score_tutorial_min=26,score_tutorial=26] ~ ~ ~ function loop:trigger/
 execute @p[score_tutorial_min=27,score_tutorial=27] ~ ~ ~ function loop:trigger/tutorial/units/light_cavalry
 execute @p[score_tutorial_min=28,score_tutorial=28] ~ ~ ~ function loop:trigger/tutorial/units/reiter
 execute @p[score_tutorial_min=3,score_tutorial=3] ~ ~ ~ function loop:trigger/tutorial/keyboard
+execute @p[score_tutorial_min=30,score_tutorial=30] ~ ~ ~ function loop:trigger/tutorial/keyboard/click
+execute @p[score_tutorial_min=31,score_tutorial=31] ~ ~ ~ function loop:trigger/tutorial/keyboard/q
+execute @p[score_tutorial_min=32,score_tutorial=32] ~ ~ ~ function loop:trigger/tutorial/keyboard/f
 execute @p[score_tutorial_min=100,score_tutorial=100] ~ ~ ~ function stage:menu/tutorial
-execute @p[score_mode_min=1,m=2] ~ ~ ~ function loop:trigger/mode/g3
+execute @p[score_mode_min=1,m=1] ~ ~ ~ function loop:trigger/mode/g3
 execute @p[score_mode_min=1,m=3] ~ ~ ~ function loop:trigger/mode/g2
-
-
-
-
-
-
 
 
 

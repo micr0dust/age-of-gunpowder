@@ -20,7 +20,14 @@ scoreboard players operation @e[tag=cmd] rteam = @e[tag=saveA] Rsave_team
 scoreboard players operation @e[tag=cmd] bteam = @e[tag=saveA] Bsave_team
 scoreboard players operation @e[tag=cmd] yteam = @e[tag=saveA] Ysave_team
 scoreboard players operation @e[tag=cmd] gteam = @e[tag=saveA] Gsave_team
-gamemode 3 @a
+scoreboard players tag @p[team=red] add isPlayer
+scoreboard players tag @p[team=blue] add isPlayer
+scoreboard players tag @p[team=yellow] add isPlayer
+scoreboard players tag @p[team=green] add isPlayer
+scoreboard teams join spectator @a[tag=!isPlayer]
+gamemode 1 @a
+gamemode 3 @a[team=spectator]
+scoreboard players tag @a remove isPlayer
 fill 0 46 0 0 45 2 minecraft:air
 fill 0 45 0 0 45 2 minecraft:barrier
 setblock 0 46 0 minecraft:command_block 0 replace {Command:"function console:delay"}
@@ -57,7 +64,7 @@ function loop:population/yellow
 function loop:population/green
 scoreboard players set @e[tag=cmd] stage 1
 scoreboard players set @e[tag=cmd] branch 1
-
+function loop:hotkey/format
 
 
 
