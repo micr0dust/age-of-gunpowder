@@ -4,6 +4,12 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
+
+function loop:hotkey/force_render/blue if @p[team=blue,tag=render]
+function loop:hotkey/force_render/green if @p[team=green,tag=render]
+function loop:hotkey/force_render/red if @p[team=red,tag=render]
+function loop:hotkey/force_render/yellow if @p[team=yellow,tag=render]
+
 #觸發
 function loop:trigger
 #隨機
@@ -57,4 +63,3 @@ kill @e[tag=trash]
 execute @a[x=-5,y=0,z=-5,dx=113,dy=50,dz=113] ~ ~ ~ tp @p ~ 51 ~
 #禁止傷害
 effect @a minecraft:weakness 100 255 true
-

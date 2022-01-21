@@ -45,6 +45,7 @@ execute @e[tag=cmd,score_balive=0] ~ ~ ~ kill @e[tag=blue]
 execute @e[tag=cmd,score_yalive=0] ~ ~ ~ kill @e[tag=yellow]
 execute @e[tag=cmd,score_galive=0] ~ ~ ~ kill @e[tag=green]
 function @@@:resource_init
+function console:init_tech
 scoreboard players set @e[tag=cmd] stage 1
 scoreboard players set @e[tag=cmd] branch 2
 function loop:hotkey/format

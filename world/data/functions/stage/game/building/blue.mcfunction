@@ -19,7 +19,9 @@ execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=yellow,r=0,c=1] ~ ~ ~ tellraw 
 execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=green,r=0,c=1] ~ ~ ~ tellraw @p[team=blue] ["",{"text":"██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██\n██","color":"dark_green"},{"text":"█"},{"text":"██","color":"dark_green"}]
 execute @e[tag=building,c=1] ~ ~ ~ function stage:game/buildfn/blue if @e[tag=blue,r=0,c=1]
 execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=blue,r=0,c=1] ~ ~ ~ tellraw @p[team=blue] ["",{"text":"---------------------------","color":"yellow"}]
-
+execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=red,r=0,c=1] ~ ~ ~ tellraw @p[team=blue] ["",{"selector":"@a[team=red]"},{"text":" "}]
+execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=yellow,r=0,c=1] ~ ~ ~ tellraw @p[team=blue] ["",{"selector":"@a[team=yellow]"},{"text":" "}]
+execute @e[tag=building,c=1] ~ ~ ~ execute @e[tag=green,r=0,c=1] ~ ~ ~ tellraw @p[team=blue] ["",{"selector":"@a[team=green]"},{"text":" "}]
 
 
 

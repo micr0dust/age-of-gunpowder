@@ -63,10 +63,20 @@ execute @e[tag=cmd,score_j=0] ~ ~ ~ execute @e[name=commandcenter,score_AI_y=-1,
 execute @e[tag=cmd,score_j_min=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @e[name=barracks,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/musket if @e[tag=cmd,score_ymanpower_min=80,score_ywood_min=10,score_ywood_ef=0,score_i=-1,score_yflintlock_min=1,score_k=2]
 #餘額買兵
 execute @e[tag=!yellow,type=vindication_illager,c=1] ~ ~ ~ execute @e[name=barracks,tag=yellow,c=1,score_connect_min=1,score_l_min=1] ~ ~ ~ function loop:ai/yellow/cost/swordman if @e[tag=cmd,score_ymanpower_min=1000,score_ygold_min=1000,score_i=-1,score_i_min=-7]
+#極難AI作弊
+execute @e[tag=cmd,score_time_min=100,score_time=100,score_yalive_min=1,score_Ydifficulty_min=5,score_yAI=1,score_yflintlock=0] ~ ~ ~ execute @e[name=commandcenter,score_AI_b=-1,c=1] ~ ~ ~ execute @e[tag=yellow,name=barracks,c=3,score_connect_min=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"swordman",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","yellow"]}
+execute @e[tag=cmd,score_time_min=100,score_time=100,score_yalive_min=1,score_Ydifficulty_min=5,score_yAI=1,score_yflintlock_min=1,score_yrifling=0] ~ ~ ~ execute @e[name=commandcenter,score_AI_b=-1,c=1] ~ ~ ~ execute @e[tag=yellow,name=barracks,c=3,score_connect_min=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"musket",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","yellow"]}
+execute @e[tag=cmd,score_time_min=100,score_time=100,score_yalive_min=1,score_Ydifficulty_min=5,score_yAI=1] ~ ~ ~ execute @e[name=commandcenter,score_AI_b=-1,c=1] ~ ~ ~ execute @e[tag=yellow,name=stable,c=3,score_connect_min=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"light_cavalry",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","yellow"]}
+execute @e[tag=cmd,score_time_min=100,score_time=100,score_yalive_min=1,score_Ydifficulty_min=5,score_yAI=1,score_yrifling_min=1] ~ ~ ~ execute @e[name=commandcenter,score_AI_b=-1,c=1] ~ ~ ~ execute @e[tag=yellow,name=barracks,c=3,score_connect_min=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"rifleman",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","yellow"]}
+
 #開場工廠
 execute @e[tag=cmd,score_ywood_min=200] ~ ~ ~ function loop:ai/yellow/init_factory unless @e[name=factory,tag=yellow]
 #餘額買地
 function loop:ai/yellow/territory if @e[tag=cmd,score_ymanpower_min=500]
+#餘額買軍營
+function loop:ai/yellow/barracks if @e[tag=cmd,score_ywood_min=600,score_ygold_min=700]
+#餘額買馬廄(極難)
+function loop:ai/yellow/stable if @e[tag=cmd,score_ywood_min=600,score_ygold_min=400]
 #餘額買軍營
 function loop:ai/yellow/barracks if @e[tag=cmd,score_ywood_min=600]
 #餘額買房
@@ -77,32 +87,18 @@ function loop:ai/yellow/barracks if @e[tag=cmd,score_ywood_min=600]
 execute @e[name=factory,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/wheellock if @e[tag=cmd,score_ygold_min=500,score_ywheellock=0]
 #餘額升級
 execute @e[name=factory,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/flintlock if @e[tag=cmd,score_ygold_min=500,score_ywheellock_min=1,score_yflintlock=0]
+#餘額升級(極難)
+execute @e[name=factory,tag=yellow,c=1,score_connect_min=1] ~ ~ ~ function loop:ai/yellow/cost/rifling if @e[tag=cmd,score_ygold_min=500,score_yflintlock_min=1,score_yrifling=0]
 #孤立資源領土自刪
 execute @e[tag=yellow,score_connect=0,score_connect_min=0] ~ ~ ~ function @@@:suicide if @e[r=2,score_resourceType_min=1]
+#城牆自刪
+execute @e[tag=yellow,score_connect_min=1,name=!wall] ~ ~ ~ execute @e[name=wall,tag=yellow,r=9] ~ ~ ~ function @@@:suicide
 #投降
-execute @e[tag=cmd,score_ymanpower_ef=7] ~ ~ ~ execute @e[name=commandcenter,tag=yellow] ~ ~ ~ function @@@:suicide if @e[tag=!yellow,type=vindication_illager,r=33]
+execute @e[tag=cmd,score_ymanpower_ef=7,score_AI_surrender_min=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow] ~ ~ ~ function @@@:suicide if @e[tag=!yellow,type=vindication_illager,r=33]
 #execute @e[name=commandcenter,tag=yellow] ~ ~ ~ function @@@:suicide if @e[tag=!yellow,type=shulker,name=territory,r=40]
 #自動進攻
-scoreboard players set @e[tag=cmd] k 100
-scoreboard players operation @e[tag=cmd] j = @e[tag=cmd] time
-scoreboard players operation @e[tag=cmd] j %= @e[tag=cmd] k
-execute @e[tag=yellow,score_connect_min=1,name=!wall] ~ ~ ~ execute @e[name=wall,tag=yellow,r=9] ~ ~ ~ function @@@:suicide
-execute @e[tag=cmd,score_j_min=21,score_j=21] ~ ~ ~ execute @e[tag=cmd,score_yteam_min=1,score_yteam=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ tp @e[tag=ytarget] @e[tag=s,team=!team1,c=1,r=36]
-execute @e[tag=cmd,score_j_min=21,score_j=21] ~ ~ ~ execute @e[tag=cmd,score_yteam_min=2,score_yteam=2] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ tp @e[tag=ytarget] @e[tag=s,team=!team2,c=1,r=36]
-execute @e[tag=cmd,score_j_min=21,score_j=21] ~ ~ ~ execute @e[tag=cmd,score_yteam_min=3,score_yteam=3] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ tp @e[tag=ytarget] @e[tag=s,team=!team3,c=1,r=36]
-execute @e[tag=cmd,score_j_min=21,score_j=21] ~ ~ ~ execute @e[tag=cmd,score_yteam_min=4,score_yteam=4] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ tp @e[tag=ytarget] @e[tag=s,team=!team4,c=1,r=36]
-execute @e[tag=cmd,score_j_min=21,score_j=21] ~ ~ ~ execute @e[tag=cmd,score_yteam_min=4,score_yteam=4] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @e[tag=s,team=!team4,c=1,r=36] ~ ~ ~ tp @e[tag=ytarget] ~ 48 ~
-execute @e[tag=cmd,score_j_min=1,score_j=1] ~ ~ ~ scoreboard players set @e[tag=s] i 0
-execute @e[tag=cmd,score_j_min=1,score_j=1] ~ ~ ~ execute @e[tag=yellow] ~ ~ ~ scoreboard players set @e[tag=s,c=1,r=0] i 1
-execute @e[tag=cmd,score_j_min=1,score_j=1,score_yflintlock=0] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @e[name=barracks,tag=yellow,c=1] ~ ~ ~ execute @e[tag=s,score_i_min=1,c=1] ~ ~ ~ function loop:ai/yellow/auto_attack unless @e[tag=ytarget]
-execute @e[tag=cmd,score_j_min=1,score_j=1,score_yflintlock_min=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ execute @e[name=barracks,tag=yellow,c=1] ~ ~ ~ execute @e[tag=range,score_i_min=1,c=1] ~ ~ ~ function loop:ai/yellow/auto_attack unless @e[tag=ytarget]
-execute @e[tag=cmd,score_j_min=1,score_j=1] ~ ~ ~ scoreboard players set @e[tag=s] i 0
-execute @e[tag=cmd,score_j_min=2,score_j=2] ~ ~ ~ function loop:trigger/attack/yellow unless @e[tag=ytarget]
-execute @e[tag=cmd,score_j_min=16,score_j=16] ~ ~ ~ execute @e[tag=ychecker] ~ ~ ~ function loop:trigger/attack/yellow if @e[tag=yattack,r=0]
-execute @e[tag=cmd,score_j_min=18,score_j=18] ~ ~ ~ execute @e[tag=yattack] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Duration:100,Radius:0,Tags:["checker","ychecker"]}
-execute @e[tag=cmd,score_j_min=20,score_j=20] ~ ~ ~ execute @e[tag=yattack] ~ ~ ~ function loop:trigger/attack/yellow unless @e[tag=s,r=5]
-execute @e[tag=building,score_AI_y=-1,c=1] ~ ~ ~ execute @e[tag=ytarget] ~ ~ ~ function loop:ai/yellow/change_target unless @e[tag=building,score_AI_y=-1,c=1,r=5]
-
+function loop:ai/yellow/module/attack if @e[tag=cmd,score_j_min=1]
+function loop:ai/yellow/module/attack if @e[tag=cmd,score_j=0,score_Ydifficulty_min=2]
 
 
 
