@@ -4,11 +4,11 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players remove @e[tag=cmd] bmanpower 1
-scoreboard players remove @e[tag=cmd] bmanpower_ef 1
-scoreboard players add @e[tag=cmd] bwood 1
-scoreboard players add @e[tag=cmd] Bwoods 1
-scoreboard players add @e[tag=cmd] bwood_ef 1
+scoreboard players remove @e[tag=cmd,c=1] bmanpower 1
+scoreboard players remove @e[tag=cmd,c=1] bmanpower_ef 1
+scoreboard players add @e[tag=cmd,c=1] bwood 1
+scoreboard players add @e[tag=cmd,c=1] Bwoods 1
+scoreboard players add @e[tag=cmd,c=1] bwood_ef 1
 
 
 

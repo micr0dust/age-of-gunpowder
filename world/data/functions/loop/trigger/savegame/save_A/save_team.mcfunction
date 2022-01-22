@@ -4,9 +4,9 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players operation @e[tag=saveA] Rsave_team = @e[tag=cmd] rteam
-scoreboard players operation @e[tag=saveA] Bsave_team = @e[tag=cmd] bteam
-scoreboard players operation @e[tag=saveA] Ysave_team = @e[tag=cmd] yteam
-scoreboard players operation @e[tag=saveA] Gsave_team = @e[tag=cmd] gteam
+scoreboard players operation @e[tag=saveA] Rsave_team = @e[tag=cmd,c=1] rteam
+scoreboard players operation @e[tag=saveA] Bsave_team = @e[tag=cmd,c=1] bteam
+scoreboard players operation @e[tag=saveA] Ysave_team = @e[tag=cmd,c=1] yteam
+scoreboard players operation @e[tag=saveA] Gsave_team = @e[tag=cmd,c=1] gteam
 
 

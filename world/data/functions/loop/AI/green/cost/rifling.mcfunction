@@ -4,8 +4,8 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players set @e[tag=cmd] grifling 1
-scoreboard players remove @e[tag=cmd] ggold 500
+scoreboard players set @e[tag=cmd,c=1] grifling 1
+scoreboard players remove @e[tag=cmd,c=1] ggold 500
 
 
 

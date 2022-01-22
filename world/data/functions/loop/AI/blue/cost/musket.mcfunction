@@ -5,8 +5,8 @@
 # By Microdust
 #########################################################################################################
 execute @e[tag=blue,name=barracks,c=1] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {CustomName:"musket",CustomNameVisible:0,Duration:2147483647,Radius:0,Tags:["pretrain","blue"]}
-scoreboard players remove @e[tag=cmd] bmanpower 80
-scoreboard players remove @e[tag=cmd] bgold 10
+scoreboard players remove @e[tag=cmd,c=1] bmanpower 80
+scoreboard players remove @e[tag=cmd,c=1] bgold 10
 
 
 

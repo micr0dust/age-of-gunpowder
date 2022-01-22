@@ -4,6 +4,6 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players operation @e[tag=cmd] terrain = @e[tag=cmd] terrainRNG
+scoreboard players operation @e[tag=cmd,c=1] terrain = @e[tag=cmd,c=1] terrainRNG
 
 

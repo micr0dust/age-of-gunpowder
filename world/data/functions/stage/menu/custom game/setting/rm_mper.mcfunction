@@ -5,7 +5,7 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players remove @e[tag=cmd] init_manpower 10
+scoreboard players remove @e[tag=cmd,c=1] init_manpower 10
 function stage:menu/custom%20game/setting
 
 

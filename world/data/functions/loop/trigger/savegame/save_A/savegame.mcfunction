@@ -10,7 +10,7 @@ tellraw @a ["",{"translate":"aop.savegame.text","color":"white"}]
 tellraw @a ["",{"text":""}]
 tellraw @a ["",{"text":"[","color":"green"},{"translate":"aop.savegame.done","color":"white","clickEvent":{"action":"run_command","value":"/function console:reset"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.savegame.done.hover"}]}},{"text":"]","color":"green"}]
 
-scoreboard players set @e[tag=cmd] branch 4
+scoreboard players set @e[tag=cmd,c=1] branch 4
 
 kill @e[tag=saveA]
 summon area_effect_cloud 0 0 0 {Duration:2147483647,Radius:0,Tags:["saveA","save"]}

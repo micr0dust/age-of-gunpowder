@@ -4,20 +4,20 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players operation @e[tag=cmd] rmanpower = @e[tag=cmd] init_manpower
-scoreboard players operation @e[tag=cmd] bmanpower = @e[tag=cmd] init_manpower
-scoreboard players operation @e[tag=cmd] ymanpower = @e[tag=cmd] init_manpower
-scoreboard players operation @e[tag=cmd] gmanpower = @e[tag=cmd] init_manpower
+scoreboard players operation @e[tag=cmd,c=1] rmanpower = @e[tag=cmd,c=1] init_manpower
+scoreboard players operation @e[tag=cmd,c=1] bmanpower = @e[tag=cmd,c=1] init_manpower
+scoreboard players operation @e[tag=cmd,c=1] ymanpower = @e[tag=cmd,c=1] init_manpower
+scoreboard players operation @e[tag=cmd,c=1] gmanpower = @e[tag=cmd,c=1] init_manpower
 
-scoreboard players operation @e[tag=cmd] rwood = @e[tag=cmd] init_wood
-scoreboard players operation @e[tag=cmd] bwood = @e[tag=cmd] init_wood
-scoreboard players operation @e[tag=cmd] ywood = @e[tag=cmd] init_wood
-scoreboard players operation @e[tag=cmd] gwood = @e[tag=cmd] init_wood
+scoreboard players operation @e[tag=cmd,c=1] rwood = @e[tag=cmd,c=1] init_wood
+scoreboard players operation @e[tag=cmd,c=1] bwood = @e[tag=cmd,c=1] init_wood
+scoreboard players operation @e[tag=cmd,c=1] ywood = @e[tag=cmd,c=1] init_wood
+scoreboard players operation @e[tag=cmd,c=1] gwood = @e[tag=cmd,c=1] init_wood
 
-scoreboard players operation @e[tag=cmd] rgold = @e[tag=cmd] init_gold
-scoreboard players operation @e[tag=cmd] bgold = @e[tag=cmd] init_gold
-scoreboard players operation @e[tag=cmd] ygold = @e[tag=cmd] init_gold
-scoreboard players operation @e[tag=cmd] ggold = @e[tag=cmd] init_gold
+scoreboard players operation @e[tag=cmd,c=1] rgold = @e[tag=cmd,c=1] init_gold
+scoreboard players operation @e[tag=cmd,c=1] bgold = @e[tag=cmd,c=1] init_gold
+scoreboard players operation @e[tag=cmd,c=1] ygold = @e[tag=cmd,c=1] init_gold
+scoreboard players operation @e[tag=cmd,c=1] ggold = @e[tag=cmd,c=1] init_gold
 
 
 

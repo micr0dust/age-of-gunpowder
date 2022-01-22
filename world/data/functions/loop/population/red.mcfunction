@@ -4,8 +4,8 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players set @e[tag=cmd] Rpopulation 0
-execute @e[name=house,tag=red] ~ ~ ~ scoreboard players add @e[tag=cmd] Rpopulation 4 
+scoreboard players set @e[tag=cmd,c=1] Rpopulation 0
+execute @e[name=house,tag=red] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] Rpopulation 4 
 
 
 

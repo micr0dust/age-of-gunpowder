@@ -4,8 +4,8 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players set @e[tag=cmd] gwheellock 1
-scoreboard players remove @e[tag=cmd] ggold 300
+scoreboard players set @e[tag=cmd,c=1] gwheellock 1
+scoreboard players remove @e[tag=cmd,c=1] ggold 300
 
 
 

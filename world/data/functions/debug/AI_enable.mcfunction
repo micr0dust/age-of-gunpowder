@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=cmd] rAI 1
-scoreboard players set @e[tag=cmd] bAI 1
-scoreboard players set @e[tag=cmd] yAI 1
-scoreboard players set @e[tag=cmd] gAI 1
+scoreboard players set @e[tag=cmd,c=1] rAI 1
+scoreboard players set @e[tag=cmd,c=1] bAI 1
+scoreboard players set @e[tag=cmd,c=1] yAI 1
+scoreboard players set @e[tag=cmd,c=1] gAI 1

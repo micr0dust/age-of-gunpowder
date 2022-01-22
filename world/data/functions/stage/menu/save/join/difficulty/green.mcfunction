@@ -5,8 +5,8 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players add @e[tag=cmd] Gdifficulty 1
-scoreboard players set @e[tag=cmd,score_Gdifficulty_min=6] Gdifficulty 0
+scoreboard players add @e[tag=cmd,c=1] Gdifficulty 1
+scoreboard players set @e[tag=cmd,c=1,score_Gdifficulty_min=6] Gdifficulty 0
 function stage:menu/save/team
 
 

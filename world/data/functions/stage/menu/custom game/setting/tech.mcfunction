@@ -5,8 +5,8 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players add @e[tag=cmd] init_tech 1
-scoreboard players set @e[tag=cmd,score_init_tech_min=5] init_tech 0
+scoreboard players add @e[tag=cmd,c=1] init_tech 1
+scoreboard players set @e[tag=cmd,c=1,score_init_tech_min=5] init_tech 0
 function stage:menu/custom%20game/setting
 
 

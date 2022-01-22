@@ -13,10 +13,10 @@ execute @e[type=villager] ~ ~ ~ kill @e[tag=attacker,r=1]
 function stage:game/team
 
 #AI
-execute @e[tag=cmd,score_ralive_min=1,score_Rdifficulty_min=1,score_rAI_min=1,score_rAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ function loop:ai/red
-execute @e[tag=cmd,score_balive_min=1,score_Bdifficulty_min=1,score_bAI_min=1,score_bAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ function loop:ai/blue
-execute @e[tag=cmd,score_yalive_min=1,score_Ydifficulty_min=1,score_yAI_min=1,score_yAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ function loop:ai/yellow
-execute @e[tag=cmd,score_galive_min=1,score_Gdifficulty_min=1,score_gAI_min=1,score_gAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ function loop:ai/green
+execute @e[tag=cmd,c=1,score_ralive_min=1,score_Rdifficulty_min=1,score_rAI_min=1,score_rAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ function loop:ai/red
+execute @e[tag=cmd,c=1,score_balive_min=1,score_Bdifficulty_min=1,score_bAI_min=1,score_bAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=blue,c=1] ~ ~ ~ function loop:ai/blue
+execute @e[tag=cmd,c=1,score_yalive_min=1,score_Ydifficulty_min=1,score_yAI_min=1,score_yAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=yellow,c=1] ~ ~ ~ function loop:ai/yellow
+execute @e[tag=cmd,c=1,score_galive_min=1,score_Gdifficulty_min=1,score_gAI_min=1,score_gAI=1,c=1] ~ ~ ~ execute @e[name=commandcenter,tag=green,c=1] ~ ~ ~ function loop:ai/green
 
 
 
@@ -24,10 +24,10 @@ execute @e[tag=cmd,score_galive_min=1,score_Gdifficulty_min=1,score_gAI_min=1,sc
 execute @a[score_status_min=1,team=!spectator] ~ ~ ~ function stage:game/building if @e[tag=ctrl,r=4,score_buildType_min=1]
 execute @a[score_status_min=1,team=!spectator] ~ ~ ~ function stage:game/territory if @e[tag=ctrl,r=4,score_buildType=0]
 execute @a[score_status=0,team=!spectator,x=0,y=51,z=0,dx=108,dy=57,dz=108] ~ ~ ~ function stage:game/minimap unless @e[tag=ctrl,r=4]
-execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd] rctrl 1111
-execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd] bctrl 1111
-execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd] yctrl 1111
-execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd] gctrl 1111
+execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd,c=1] rctrl 1111
+execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd,c=1] bctrl 1111
+execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd,c=1] yctrl 1111
+execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ scoreboard players set @e[tag=cmd,c=1] gctrl 1111
 execute @a[score_status2=0,team=!spectator,x=0,y=58,z=0,dx=108,dy=256,dz=108] ~ ~ ~ function stage:game/lead
 
 
@@ -96,8 +96,8 @@ scoreboard players tag @e[tag=light_cavalry] remove light_cavalry {OnGround:1b}
 scoreboard players tag @e[tag=reiter] remove reiter {OnGround:1b}
 scoreboard players tag @e[tag=pistol] remove pistol {OnGround:1b}
 #快鍵偵測
-function loop:hotkey/off_hand if @e[tag=cmd,score_hotKey_min=1]
-function loop:hotkey/right_click if @e[tag=cmd,score_hotKey_min=1]
+function loop:hotkey/off_hand if @e[tag=cmd,c=1,score_hotKey_min=1]
+function loop:hotkey/right_click if @e[tag=cmd,c=1,score_hotKey_min=1]
 #結束偵測
 function loop:endgame
 #隱形

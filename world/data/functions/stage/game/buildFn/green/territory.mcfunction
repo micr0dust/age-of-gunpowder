@@ -11,7 +11,7 @@ tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.barra
 tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.stable","clickEvent":{"action":"run_command","value":"/trigger building set 7"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.stable.hover"}]}},{"text":"] ","color":"yellow"},{"text":"200","color":"dark_green"}]
 tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.house","clickEvent":{"action":"run_command","value":"/trigger building set 8"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.house.hover"}]}},{"text":"] ","color":"yellow"},{"text":"100","color":"dark_green"}]
 tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.wall","clickEvent":{"action":"run_command","value":"/trigger building set 10"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.wall.hover"}]}},{"text":"] ","color":"yellow"},{"text":"100","color":"dark_green"}]
-execute @e[tag=cmd,score_gfield_gun_min=1] ~ ~ ~ tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.cannon","clickEvent":{"action":"run_command","value":"/trigger building set 9"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.cannon.hover"}]}},{"text":"] ","color":"yellow"},{"text":"250","color":"gold"}]
+execute @e[tag=cmd,c=1,score_gfield_gun_min=1] ~ ~ ~ tellraw @p[team=green] ["",{"text":"[","color":"yellow"},{"translate":"aop.cannon","clickEvent":{"action":"run_command","value":"/trigger building set 9"},"hoverEvent":{"action":"show_text","value":[{"translate":"aop.cannon.hover"}]}},{"text":"] ","color":"yellow"},{"text":"250","color":"gold"}]
 
 
 

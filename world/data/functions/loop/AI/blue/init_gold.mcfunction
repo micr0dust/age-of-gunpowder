@@ -11,7 +11,7 @@ execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=1,score
 execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=1,score_resourceType=1] ~ ~1 ~ function structures:blue/forest
 execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=2,score_resourceType=2] ~ ~1 ~ function summon:building/blue/gold
 execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=2,score_resourceType=2] ~ ~1 ~ function structures:blue/gold
-execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=0,score_resourceType=2] ~ ~1 ~ scoreboard players remove @e[tag=cmd] bmanpower 500
+execute @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=0,score_resourceType=2] ~ ~1 ~ scoreboard players remove @e[tag=cmd,c=1] bmanpower 500
 scoreboard players set @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2] buildType 1
 scoreboard players set @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=0,score_resourceType=0] resourceType 0
 scoreboard players set @e[tag=ctrl,score_AI_b_min=2,score_AI_b=2,score_resourceType_min=1,score_resourceType=1] resourceType 1

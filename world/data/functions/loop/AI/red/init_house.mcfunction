@@ -7,7 +7,7 @@
 execute @e[name=commandcenter,tag=red,c=1] ~ ~ ~ scoreboard players set @e[name=territory,tag=red,c=1] AI_r 8
 execute @e[name=territory,tag=red,score_AI_r_min=8,score_AI_r=8] ~ ~ ~ function summon:building/red/house
 execute @e[name=territory,tag=red,score_AI_r_min=8,score_AI_r=8] ~ ~ ~ function structures:red/house
-execute @e[name=territory,tag=red,score_AI_r_min=8,score_AI_r=8] ~ ~ ~ scoreboard players remove @e[tag=cmd] rwood 100
+execute @e[name=territory,tag=red,score_AI_r_min=8,score_AI_r=8] ~ ~ ~ scoreboard players remove @e[tag=cmd,c=1] rwood 100
 scoreboard players set @e[tag=ctrl,score_AI_r_min=8,score_AI_r=8] buildType 2
 scoreboard players set @e[tag=ctrl,score_AI_r_min=8,score_AI_r=8] resourceType 0
 execute @e[name=territory,tag=red,score_AI_r_min=8,score_AI_r=8] ~ ~ ~ function @@@:suicide

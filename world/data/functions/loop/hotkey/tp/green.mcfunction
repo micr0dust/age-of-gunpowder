@@ -8,15 +8,15 @@ execute @p[team=green] ~ ~ ~ effect @e[tag=building,r=3,c=1] minecraft:glowing 0
 scoreboard players set @e[tag=building] Gviewed 0
 scoreboard players set @e[tag=green,type=vindication_illager] Gviewed 0
 scoreboard players set @e[tag=Gviewed] Gviewed 1
-execute @p[team=green,score_keyQ=0,score_keyQ_min=0,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=commandcenter,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=1,score_keyQ_min=1,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=factory,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=2,score_keyQ_min=2,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=barracks,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=3,score_keyQ_min=3,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=stable,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=4,score_keyQ_min=4,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=house,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=5,score_keyQ_min=5,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=wall,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=6,score_keyQ_min=6,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=tower,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=7,score_keyQ_min=7,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[name=commandcenter,score_Gviewed=0,c=1] add Gviewing
-execute @p[team=green,score_keyQ=8,score_keyQ_min=8,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,type=vindication_illager,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=0,score_keyQ_min=0,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=commandcenter,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=1,score_keyQ_min=1,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=factory,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=2,score_keyQ_min=2,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=barracks,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=3,score_keyQ_min=3,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=stable,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=4,score_keyQ_min=4,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=house,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=5,score_keyQ_min=5,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=wall,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=6,score_keyQ_min=6,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,name=tower,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=7,score_keyQ_min=7,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[name=commandcenter,score_Gviewed=0,c=1] add Gviewing
+execute @p[team=green,score_keyQ=8,score_keyQ_min=8,score_drop_min=1] ~ ~ ~ execute @e[tag=cmd,c=1,c=1] ~ ~ ~ scoreboard players tag @e[tag=green,type=vindication_illager,score_Gviewed=0,c=1] add Gviewing
 tp @p[team=green] @e[tag=Gviewing,c=1]
 scoreboard players set @p[team=green] i 1
 execute @e[tag=Gviewing,c=1] ~ ~ ~ scoreboard players set @p[team=green] i 0
