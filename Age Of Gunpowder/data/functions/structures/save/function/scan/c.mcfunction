@@ -1,0 +1,16 @@
+setblock 13 73 13 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c00",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 13 73 40 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c01",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 13 73 67 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c02",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 13 73 94 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c03",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 40 73 13 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c10",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 40 73 40 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c11",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 40 73 67 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c12",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 40 73 94 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c13",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 67 73 13 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c20",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 67 73 40 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c21",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 67 73 67 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c22",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 67 73 94 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c23",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 94 73 13 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c30",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 94 73 40 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c31",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 94 73 67 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c32",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
+setblock 94 73 94 structure_block 1 replace {mode:"SAVE",posX:-13,posY:-32,posZ:-13,sizeX:27,sizeY:32,sizeZ:27,name:"c33",rotation:"NONE",mirror:"NONE",ignoreEntities:0}
