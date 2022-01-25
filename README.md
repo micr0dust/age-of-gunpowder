@@ -1,3 +1,13 @@
+![](https://truth.bahamut.com.tw/s01/202201/1d23d045de6378315a0b4bc7f9bb4b2c.JPG)
+
+- Minecraft version:1.12.2
+- Language: English
+- Players: 0~4 player
+- Spectators: not limited
+- Game Category: Real-time Strategy
+- Mode: Spectator mode
+- resources package: under
+
 The background of the game is set in the era of the transition from the Middle Ages to the line infantry period.
 The invention of the musket allowed infantry to gradually replace cavalry into the mainstream on the battlefield.
 
