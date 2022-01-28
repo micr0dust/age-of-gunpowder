@@ -24,9 +24,9 @@ Occupy more land to increase resource productivity, cut off the enemy's territor
 > /function console:reset 
 
 ### Download
-[[ Map download ]](https://bit.ly/火藥時代 "[ Map download ]")
+[[ Map download ]](https://bit.ly/ageofgunpowder "[ Map download ]")
 
-[[ resource pack ]](https://bit.ly/火藥時代資源包 "[ resource pack ]") (required)
+[[ resource pack ]](https://bit.ly/ageofgunpowderpack "[ resource pack ]") (required)
 
 ### Suggest setting:
 If you don't want to see red tint cause by world border.
