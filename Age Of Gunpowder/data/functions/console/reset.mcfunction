@@ -23,10 +23,10 @@ scoreboard players set @e[tag=cmd,c=1] stage 0
 scoreboard players set @e[tag=cmd,c=1] branch 0
 clear @a
 spreadplayers 54 53 2 18 false @a[team=!spectator]
-worldborder center -1000 -1000
-worldborder set 1 0
-
-
+worldborder center 0 0
+worldborder set 99999
+gamemode 2 @a
+xp -100L @a
 
 
 

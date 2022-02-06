@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 function @@@:chatbar_clear
-gamemode 1 @p[score_mode_min=1,m=!1]
+gamemode 2 @p[score_mode_min=1,m=!2]
 scoreboard players set @a[score_mode_min=1] mode 0
 scoreboard players enable @a mode
 tellraw @p {"translate":"--%s-----------","with":[{"translate":"aop.menu.mode"}],"color":"yellow"}

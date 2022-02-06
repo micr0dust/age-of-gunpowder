@@ -63,3 +63,5 @@ kill @e[tag=trash]
 execute @a[x=-5,y=0,z=-5,dx=113,dy=50,dz=113] ~ ~ ~ tp @p ~ 51 ~
 #禁止傷害
 effect @a minecraft:weakness 100 255 true
+#飽食
+effect @a minecraft:saturation 100 255 true

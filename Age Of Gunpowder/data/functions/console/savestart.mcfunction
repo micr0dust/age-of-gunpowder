@@ -29,6 +29,8 @@ scoreboard teams join spectator @a[tag=!isPlayer]
 gamemode 1 @a
 gamemode 3 @a[team=spectator]
 scoreboard players tag @a remove isPlayer
+worldborder center -1000 -1000
+worldborder set 1
 fill 0 46 0 0 45 2 minecraft:air
 fill 0 45 0 0 45 2 minecraft:barrier
 setblock 0 46 0 minecraft:command_block 0 replace {Command:"function console:delay"}

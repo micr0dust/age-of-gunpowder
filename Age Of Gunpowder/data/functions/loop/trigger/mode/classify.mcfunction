@@ -5,7 +5,7 @@
 # By Microdust
 #########################################################################################################
 function loop:trigger/mode/g2 if @p[m=3]
-function loop:trigger/mode/g3 if @p[m=1]
+function loop:trigger/mode/g3 if @p[m=2]
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 
 
