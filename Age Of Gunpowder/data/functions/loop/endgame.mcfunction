@@ -4,12 +4,12 @@
 #【Age of Plunder III : Gunpowder】
 # By Microdust
 #########################################################################################################
-scoreboard players set @e[tag=cmd,c=1] i 0
-execute @e[tag=commandcenter,team=team1,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] i 1
-execute @e[tag=commandcenter,team=team2,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] i 1
-execute @e[tag=commandcenter,team=team3,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] i 1
-execute @e[tag=commandcenter,team=team4,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] i 1
-function loop:end if @e[tag=cmd,score_i_min=1,score_i=1,c=1]
+scoreboard players set @e[tag=cmd,c=1] gameover 0
+execute @e[tag=commandcenter,team=team1,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] gameover 1
+execute @e[tag=commandcenter,team=team2,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] gameover 1
+execute @e[tag=commandcenter,team=team3,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] gameover 1
+execute @e[tag=commandcenter,team=team4,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd,c=1] gameover 1
+function loop:end if @e[tag=cmd,score_gameover_min=1,score_gameover=1,c=1]
 
 scoreboard players set @e[tag=cmd,c=1] i 0
 scoreboard players set @e[tag=cmd,c=1] j 0
